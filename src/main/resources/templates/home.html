@@ -1,0 +1,200 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Getting Started: Serving Web Content</title>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+      integrity="sha256-eZrrJcwDc/3uDhsdt61sL2oOBY362qM3lon1gyExkL0="
+      crossorigin="anonymous"
+    />
+
+    <style>
+      .header {
+        height: 60px;
+        width: 100%;
+        background: rgba(111,168,220,.9);
+        display: flex;
+        justify-content: end;
+      }
+
+      .header .icons {
+        display: flex;
+        align-items: center;
+      }
+
+      .mr-3 {
+        margin-right: 30px;
+      }
+
+      .noti {
+        background: #eee;
+        height: 40px;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        width: 300px;
+      }
+
+      .switch {
+        position: relative;
+        display: inline-block;
+        width: 60px;
+        height: 34px;
+      }
+
+      .switch input {
+        opacity: 0;
+        width: 0;
+        height: 0;
+      }
+
+      .slider {
+        position: absolute;
+        cursor: pointer;
+        top: 0;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        background-color: #ccc;
+        -webkit-transition: 0.4s;
+        transition: 0.4s;
+      }
+
+      .slider:before {
+        position: absolute;
+        content: "";
+        height: 26px;
+        width: 26px;
+        left: 4px;
+        bottom: 4px;
+        background-color: white;
+        -webkit-transition: 0.4s;
+        transition: 0.4s;
+      }
+
+      input:checked + .slider {
+        background-color: #2196f3;
+      }
+
+      input:focus + .slider {
+        box-shadow: 0 0 1px #2196f3;
+      }
+
+      input:checked + .slider:before {
+        -webkit-transform: translateX(26px);
+        -ms-transform: translateX(26px);
+        transform: translateX(26px);
+      }
+
+      .slider.round {
+        border-radius: 34px;
+      }
+
+      .slider.round:before {
+        border-radius: 50%;
+      }
+
+      .content {
+        margin-top: 20px;
+      }
+
+      .content .card {
+        background: #ddd;
+        width: 100%;
+        display: flex;
+        margin-bottom: 20px;
+      }
+
+      .content .card .img {
+        width: 100px;
+        margin-right: 20px;
+        border: 2px solid #eee;
+      }
+      .red {
+		color: red;
+	  }
+    </style>
+  </head>
+  <body>
+    <div class="header">
+      <div class="icons">
+        <i class="fa fa-bell mr-3 fa-2x" aria-hidden="true"></i>
+        <i class="fa fa-user mr-3 fa-2x" aria-hidden="true"></i>
+        <i class="fa fa-sign-out mr-3 fa-2x" aria-hidden="true"></i>
+      </div>
+    </div>
+    <div class="noti">
+      <div>
+        <label class="switch">
+          <input type="checkbox" checked />
+          <span class="slider round"></span>
+        </label>
+      </div>
+      <div>View All announcements</div>
+    </div>
+
+    <div class="content">
+      <div class="card">
+        <div class="img">
+          <img
+            width="100%"
+            height="100%"
+            src="https://th.bing.com/th/id/R.c82941ed2814c457a80c8404ca3610a7?rik=HFzLBernXP%2blCA&pid=ImgRaw&r=0"
+            alt=""
+          >
+          <div style="margin: -140px 0 0 40px;" class="red">
+          		Dry rice
+          	</div>
+          </img>
+        </div>
+        <div class="des">
+          <h5>Jasmine's rice(any reason)-111 tons</h5>
+          <p>21/10/2021 - 22/11/2021</p>
+          <h5>Own Seed</h5>
+        </div>
+      </div>
+
+      <div class="card">
+        <div class="img">
+          <img
+            width="100%"
+            height="100%"
+            src="https://th.bing.com/th/id/R.c82941ed2814c457a80c8404ca3610a7?rik=HFzLBernXP%2blCA&pid=ImgRaw&r=0"
+            alt=""
+          >
+          	<div style="margin: -140px 0 0 40px;" class="red">
+          		Dry rice
+          	</div>
+          </img>
+        </div>
+        <div class="des">
+          <h5>Jasmine's rice(any reason)-111 tons</h5>
+          <p>21/10/2021 - 22/11/2021</p>
+          <h5>Own Seed</h5>
+        </div>
+      </div>
+
+      <div class="card">
+        <div class="img">
+          <img
+            width="100%"
+            height="100%"
+            src="https://th.bing.com/th/id/R.c82941ed2814c457a80c8404ca3610a7?rik=HFzLBernXP%2blCA&pid=ImgRaw&r=0"
+            alt=""
+          >
+          <div style="margin: -140px 0 0 40px;" class="red">
+          		Dry rice
+          	</div>
+          </img>
+        </div>
+        <div class="des">
+          <h5>Jasmine's rice(any reason)-111 tons</h5>
+          <p>21/10/2021 - 22/11/2021</p>
+          <h5>Own Seeds</h5>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
